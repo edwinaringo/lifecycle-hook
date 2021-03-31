@@ -1,0 +1,5 @@
+<button (click)="flipShowLifeCycleState()">{{showLifeCycleDemo ? 'End Lifecycle' : 'Start Lifecycle'}}</button>
+<button (click)="incrementCount()">Increment Counter</button>
+<app-lifecycle-demo *ngIf="showLifeCycleDemo" [count]="count"></app-lifecycle-demo>
+
+<router-outlet></router-outlet>
